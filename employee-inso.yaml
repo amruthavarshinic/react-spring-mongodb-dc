@@ -1,8 +1,182 @@
 _type: export
 __export_format: 4
-__export_date: 2023-12-29T06:42:20.338Z
+__export_date: 2023-12-29T06:53:36.856Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
+  - _id: req_6233a7ce867c4c12b99564258338b13b
+    parentId: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    modified: 1703832741254
+    created: 1703832741254
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: Delete employees
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1703832741254
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    parentId: wrk_57146d91c1b04773bcb374a38e0eba18
+    modified: 1703832741252
+    created: 1703832741252
+    name: Employees
+    description: Operations for Employees
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1703832741252
+    _type: request_group
+  - _id: wrk_57146d91c1b04773bcb374a38e0eba18
+    parentId: null
+    modified: 1703743885074
+    created: 1703743885074
+    name: employee-spec.yaml
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_58dc8ed16a934e4c9483369d36a4f165
+    parentId: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    modified: 1703832741254
+    created: 1703832741254
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: Update an indivisual employee
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "emailId": "user@example.com",
+          "firstName": "string",
+          "lastName": "string"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1703832741254
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ca0e9cab560b490aae4d73e6192fab9f
+    parentId: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    modified: 1703832741253
+    created: 1703832741253
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: List an employee
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1703832741253
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6a3fe789aad9441c8191ff9e881ee52e
+    parentId: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    modified: 1703832741253
+    created: 1703832741253
+    url: "{{ _.base_url }}/employees"
+    name: Add a new Employee
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "emailId": "user@example.com",
+          "firstName": "string",
+          "lastName": "string"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1703832741253
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4ff228506d614ec284f380eecf9d70a7
+    parentId: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    modified: 1703832741253
+    created: 1703832741253
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: update an indiv employee
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "emailId": "user@example.com",
+          "firstName": "string",
+          "lastName": "string"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1703832741253
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3d148bd01f0c4c2893ca164b7833c763
+    parentId: fld_bd7835ee1bc541bfbb750fb5cab92e9d
+    modified: 1703832741253
+    created: 1703832741253
+    url: "{{ _.base_url }}/employees"
+    name: List employees
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1703832741253
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_573ed78cc8cf422ea48f438bcb279652
     parentId: fld_654c90b86d0640ca95907b3233d8b5a1
     modified: 1703746620390
@@ -34,14 +208,6 @@ resources:
     environmentPropertyOrder: null
     metaSortKey: -1703746620387
     _type: request_group
-  - _id: wrk_57146d91c1b04773bcb374a38e0eba18
-    parentId: null
-    modified: 1703743885074
-    created: 1703743885074
-    name: employee-spec.yaml
-    description: ""
-    scope: design
-    _type: workspace
   - _id: req_074a6eb699f24f71a92161759bcb2700
     parentId: fld_654c90b86d0640ca95907b3233d8b5a1
     modified: 1703746672055
@@ -197,7 +363,7 @@ resources:
     _type: cookie_jar
   - _id: spc_a4874fd81dc9423586f6f473bd9e632c
     parentId: wrk_57146d91c1b04773bcb374a38e0eba18
-    modified: 1703757876173
+    modified: 1703832716469
     created: 1703743885078
     fileName: New Document
     contents: >
@@ -205,7 +371,7 @@ resources:
 
       info:
           title: Employees API
-          version: 1.0.1
+          version: 1.0.2
           description: A Sample Employees API
           contact:
               name: employees
@@ -406,7 +572,7 @@ resources:
     _type: unit_test_suite
   - _id: env_46f4588a617248a09a782d85229f2361
     parentId: env_12426324fa463ff970060a66bdbc00e30006f1f3
-    modified: 1703832109953
+    modified: 1703832775983
     created: 1703744515829
     name: OpenAPI env
     data:
@@ -414,7 +580,7 @@ resources:
       base_path: /api/v1
       host: localhost:8080
       base_url: http://localhost:8080/api/v1
-      id: "4"
+      id: "1"
     dataPropertyOrder:
       "&":
         - scheme
@@ -467,6 +633,20 @@ resources:
     color: null
     isPrivate: false
     metaSortKey: 1703746620385
+    _type: environment
+  - _id: env_8d8be3ae1b0b41acb8fa49c62cc32de0
+    parentId: env_12426324fa463ff970060a66bdbc00e30006f1f3
+    modified: 1703832741252
+    created: 1703832741252
+    name: OpenAPI env localhost:8080
+    data:
+      scheme: http
+      base_path: /api/v1
+      host: localhost:8080
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1703832741252
     _type: environment
   - _id: ut_9f863022b5884fc8bcc97231913ee750
     parentId: uts_14659ac00a4c410ab09c4d833366f9b4
