@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2024-01-03T06:11:00.728Z
+__export_date: 2024-01-03T06:19:04.091Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
   - _id: req_0d5e556f95ea4242a3d185ac6e5a2a4f
@@ -432,26 +432,6 @@ resources:
     created: 1704262153170
     requestId: req_3dfd5fe39fa64e5d9d8165d7d015c151
     name: List employees
-    code: |-
-      const response1 = await insomnia.send();
-      expect(response1.status).to.equal(200);
-    _type: unit_test
-  - _id: ut_3fc9fd0c52524535808238f9d8326293
-    parentId: uts_a2cb1b73581543bca00af301ce5aa76e
-    modified: 1704262171912
-    created: 1704262168892
-    requestId: req_9086010005174908917bb74b98cf8281
-    name: List an employee
-    code: |-
-      const response1 = await insomnia.send();
-      expect(response1.status).to.equal(200);
-    _type: unit_test
-  - _id: ut_d13cd6041ad54222b6157508fd56b28b
-    parentId: uts_a2cb1b73581543bca00af301ce5aa76e
-    modified: 1704262184187
-    created: 1704262181280
-    requestId: req_e529090dc36d48e481bdbd356cf23c4d
-    name: Delete an employee
     code: |-
       const response1 = await insomnia.send();
       expect(response1.status).to.equal(200);
