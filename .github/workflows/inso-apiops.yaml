@@ -32,11 +32,14 @@ jobs:
       
     - name: Deploy kong config file
       run: |
-        ./inso lint spec --src Insomnia_employees.yaml "Employees"
-        ./inso run test --src Insomnia_employees.yaml "Employees-test" --env "OpenAPI env"
+        # ./inso lint spec --src Insomnia_employees.yaml "Employees"
+        # ./inso run test --src Insomnia_employees.yaml "Employees-test" --env "OpenAPI env"
         # ./inso generate config "Employees" --src "Insomnia_employees.yaml" -k 3 --type declarative -o inso-kong.yaml
-        # deck dump --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD
-        # deck sync --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD -s kong.yaml -s inso-kong.yaml
+        ./inso lint spec --src Insomnia_httpbin.yaml "httpbin"
+        ./inso run test --src Insomnia_httpbin.yaml "New Suite" --env "OpenAPI env httpbin.org"
+        ./inso generate config "httpbin" --src "Insomnia_httpbin.yaml" -k 3 --type declarative -o inso-kong.yaml
+        deck dump --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD
+        deck sync --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD -s kong.yaml -s inso-kong.yaml
       env:
         ADMIN_URL: ${{ vars.admin_url }}
         ADMIN_PASSWORD: ${{ vars.admin_password }}
