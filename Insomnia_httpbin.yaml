@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2024-01-03T09:42:01.409Z
+__export_date: 2024-01-03T09:46:55.595Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
   - _id: req_ccb6d5cc17c0480896bc397a5e860ccc
@@ -1703,7 +1703,7 @@ resources:
     _type: unit_test_suite
   - _id: env_002dc7bff466479e8629abbe49fc2c1d
     parentId: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
-    modified: 1704274822730
+    modified: 1704275191932
     created: 1704274773334
     name: OpenAPI env httpbin.org
     data:
@@ -1726,40 +1726,6 @@ resources:
     color: null
     isPrivate: false
     metaSortKey: 1704274773334
-    _type: environment
-  - _id: env_312d7c889c5e462dbf170ee7c3828a06
-    parentId: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
-    modified: 1704274773335
-    created: 1704274773335
-    name: OpenAPI env httpbin.org
-    data:
-      scheme: http
-      base_path: ""
-      host: httpbin.org
-      httpUsername: username
-      httpPassword: password
-      bearerToken: bearerToken
-    dataPropertyOrder: null
-    color: null
-    isPrivate: false
-    metaSortKey: 1704274773335
-    _type: environment
-  - _id: env_e0f7feaab6464ab394ea1d1e954caf97
-    parentId: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
-    modified: 1704274773335
-    created: 1704274773335
-    name: OpenAPI env eu.httpbin.org
-    data:
-      scheme: http
-      base_path: ""
-      host: eu.httpbin.org
-      httpUsername: username
-      httpPassword: password
-      bearerToken: bearerToken
-    dataPropertyOrder: null
-    color: null
-    isPrivate: false
-    metaSortKey: 1704274773335
     _type: environment
   - _id: env_e511c22bc7e2432a9c9f80e6979da6f2
     parentId: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
