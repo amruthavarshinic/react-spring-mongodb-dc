@@ -33,7 +33,7 @@ jobs:
     - name: Deploy kong config file
       run: |
         ./inso lint spec --src Insomnia_employees.yaml "Employees"
-        ./inso run test "Employees" --src Insomnia_employees.yaml --env "OpenAPI env"
+        ./inso run test --src Insomnia_employees.yaml "List employees" --env "OpenAPI env"
         # ./inso generate config "Employees" --src "Insomnia_employees.yaml" -k 3 --type declarative -o inso-kong.yaml
         # deck dump --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD
         # deck sync --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD -s kong.yaml -s inso-kong.yaml
