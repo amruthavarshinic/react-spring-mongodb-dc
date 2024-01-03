@@ -32,7 +32,7 @@ jobs:
       
     - name: Deploy kong config file
       run: |
-        ./inso lint spec "spc_a4874f"
+        ./inso lint spec "New Document"
         ./inso run test "Employees" --src employee-inso.yaml --env "OpenAPI env"
         ./inso generate config "New Document" --src "employee-inso.yaml" -k 3 --type declarative -o inso-kong.yaml
         deck dump --tls-skip-verify --kong-addr $ADMIN_URL --headers Kong-Admin-Token:$ADMIN_PASSWORD
