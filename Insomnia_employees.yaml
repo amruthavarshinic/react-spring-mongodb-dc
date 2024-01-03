@@ -1,0 +1,458 @@
+_type: export
+__export_format: 4
+__export_date: 2024-01-03T06:11:00.728Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_0d5e556f95ea4242a3d185ac6e5a2a4f
+    parentId: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    modified: 1704178292613
+    created: 1704178292613
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: Update an indivisual employee
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "emailId": "user@example.com",
+          "firstName": "string",
+          "lastName": "string"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1704178292613
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    parentId: wrk_f57a2df2540144aaae2aee3b92c31d5b
+    modified: 1704178292607
+    created: 1704178292607
+    name: Employees
+    description: Operations for Employees
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704178292607
+    _type: request_group
+  - _id: wrk_f57a2df2540144aaae2aee3b92c31d5b
+    parentId: null
+    modified: 1704261302688
+    created: 1704178255045
+    name: Employees
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_e529090dc36d48e481bdbd356cf23c4d
+    parentId: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    modified: 1704178727300
+    created: 1704178292612
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: Delete employees
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704178292612
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9086010005174908917bb74b98cf8281
+    parentId: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    modified: 1704178292611
+    created: 1704178292611
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: List an employee
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704178292611
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_74088293c03f4bb184915ed13ba26da3
+    parentId: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    modified: 1704178292611
+    created: 1704178292611
+    url: "{{ _.base_url }}/employees/{{ _.id }}"
+    name: update an indiv employee
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "emailId": "user@example.com",
+          "firstName": "string",
+          "lastName": "string"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1704178292611
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_404a84078642454bbc9bc47a009285bd
+    parentId: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    modified: 1704202071994
+    created: 1704178292610
+    url: "{{ _.base_url }}/employees"
+    name: Add a new Employee
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "emailId": "example@test.com",
+          "firstName": "gdytghvc",
+          "lastName": "-"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1704178292610
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3dfd5fe39fa64e5d9d8165d7d015c151
+    parentId: fld_9a827b6ba6f44b89b3aa0b8503bed97a
+    modified: 1704178292609
+    created: 1704178292609
+    url: "{{ _.base_url }}/employees"
+    name: List employees
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704178292609
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_5c9d5cca182c58dca00517cb8905c4dcbb5b29b0
+    parentId: wrk_f57a2df2540144aaae2aee3b92c31d5b
+    modified: 1704178255052
+    created: 1704178255052
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1704178255052
+    _type: environment
+  - _id: jar_5c9d5cca182c58dca00517cb8905c4dcbb5b29b0
+    parentId: wrk_f57a2df2540144aaae2aee3b92c31d5b
+    modified: 1704178255053
+    created: 1704178255053
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_bc499b67adba4886923facfd2011ce05
+    parentId: wrk_f57a2df2540144aaae2aee3b92c31d5b
+    modified: 1704261302687
+    created: 1704178255050
+    fileName: Employees
+    contents: >
+      openapi: "3.0.0"
+
+      info:
+          title: Employees API
+          version: 1.0.1
+          description: A Sample Employees API
+          contact:
+              name: employees
+              url: 'http://localhost:3000'
+      servers:
+          - url: 'http://localhost:8080/api/v1'
+            description: Employees Base URL
+      tags:
+        - name: Employees
+          description: Operations for Employees
+      paths:
+          /employees:
+              get:
+                  tags:
+                      - Employees
+                  responses:
+                      '200':
+                          content:
+                              application/json:
+                                  schema:
+                                      type: array
+                                      items:
+                                          $ref: '#/components/schemas/Employee'
+                          description: OK
+                  operationId: getEmployees
+                  summary: List employees
+                  description: returns all registered employees names
+              post:
+                  requestBody:
+                      description: Optional description in *Markdown*
+                      content:
+                          application/json:
+                              schema:
+                                  $ref: '#/components/schemas/createEmployee'
+                      required: true
+                  tags:
+                      - Employees
+                  responses:
+                      '201':
+                          description: Record successfully added
+                  operationId: createEmployee
+                  summary: Add a new Employee
+                  description: create employee
+          '/employees/{id}':
+              description: Retrieve the Employee based on a Path Parameter
+              get:
+                  operationId: getEmployeesByID
+                  summary: List an employee
+                  description: returns all registered employees names by ID
+                  tags:
+                      - Employees
+                  parameters:
+                      -   name: id
+                          schema:
+                              minimum: 1
+                              type: integer
+                          in: path
+                          required: true
+                  responses:
+                      '200':
+                          content:
+                              application/json:
+                                  schema:
+                                      type: array
+                                      items:
+                                          properties:
+                                              id:
+                                                  type: integer
+                                                  example: 1
+                                              firstName:
+                                                  type: string
+                                                  example: admin
+                                              lastName:
+                                                  type: string
+                                                  example: admin
+                                              emailID:
+                                                  type: string
+                                                  example: admin@gmail.com
+                          description: Success response with a path parameter
+                      '404':
+                          description: 'Employee not found for this id, refer to [ https://httpstatuses.com/404 ]'
+              put:
+                  operationId: updateEmployeesBYID
+                  summary: update an indiv employee
+                  description: update registered employees names by ID
+                  requestBody:
+                      description: Optional description in *Markdown*
+                      content:
+                          application/json:
+                              schema:
+                                  $ref: '#/components/schemas/createEmployee'
+                      required: true
+                  tags:
+                      - Employees
+                  parameters:
+                      -
+                          name: id
+                          schema:
+                              minimum: 1
+                              type: integer
+                          in: path
+                          required: true
+                  responses:
+                      '200':
+                          description: The resource was updated successfully.
+                      '304':
+                          description: The resource Not modified.
+                      '404':
+                          description: Employee not found for this id.
+              delete:
+                  operationId: deleteEmployeesByID
+                  summary: Delete employees
+                  description: Delete an employee by ID
+                  parameters:
+                      -   name: id
+                          schema:
+                              minimum: 1
+                              type: integer
+                          in: path
+                          required: true
+                  tags:
+                      - Employees
+                  responses:
+                      '204':
+                          description: No Content.
+                      '403':
+                          description: Permission denied.
+                      '404':
+                          description: Employee not found for this id.
+              patch:
+                  operationId: updateanEmployeeByID
+                  summary: Update an indivisual employee
+                  description: Update an indivisual employee by ID
+                  requestBody:
+                      description: Optional description in *Markdown*
+                      content:
+                          application/json:
+                              schema:
+                                  $ref: '#/components/schemas/createEmployee'
+                      required: true
+                  tags:
+                      - Employees
+                  parameters:
+                      -
+                          name: id
+                          schema:
+                              minimum: 1
+                              type: integer
+                          in: path
+                          required: true
+                  responses:
+                      '200':
+                          description: The resource was updated successfully.
+                      '304':
+                          description: The resource Not modified.
+                      '404':
+                          description: Employee not found for this id.
+      components:
+          schemas:
+              Employee:
+                  type: object
+                  properties:
+                      id:
+                          format: int64
+                          description: The unique identifier for the employee.
+                          minimum: 1
+                          type: integer
+                      emailId:
+                          format: email
+                          description: The email address of the employee.
+                          type: string
+                      firstName:
+                          description: The first name of the employee.
+                          type: string
+                      lastName:
+                          description: The last name of the employee.
+                          type: string
+              createEmployee:
+                  type: object
+                  properties:
+                      emailId:
+                          format: email
+                          description: The email address of the employee.
+                          type: string
+                      firstName:
+                          description: The first name of the employee.
+                          type: string
+                      lastName:
+                          description: The last name of the employee.
+                          type: string
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_a2cb1b73581543bca00af301ce5aa76e
+    parentId: wrk_f57a2df2540144aaae2aee3b92c31d5b
+    modified: 1704262137936
+    created: 1704262137936
+    name: Employees-test
+    _type: unit_test_suite
+  - _id: env_d033d064832b4ec0895fa224f94c493d
+    parentId: env_5c9d5cca182c58dca00517cb8905c4dcbb5b29b0
+    modified: 1704262220753
+    created: 1704178292606
+    name: OpenAPI env
+    data:
+      scheme: http
+      base_path: /api/v1
+      host: localhost:8080
+      base_url: http://localhost:8080/api/v1
+      id: "9"
+    dataPropertyOrder:
+      "&":
+        - scheme
+        - base_path
+        - host
+        - base_url
+        - id
+    color: null
+    isPrivate: false
+    metaSortKey: 1704178292606
+    _type: environment
+  - _id: ut_133e6b41405242ab961a1b4fe33894f4
+    parentId: uts_a2cb1b73581543bca00af301ce5aa76e
+    modified: 1704262155730
+    created: 1704262153170
+    requestId: req_3dfd5fe39fa64e5d9d8165d7d015c151
+    name: List employees
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+    _type: unit_test
+  - _id: ut_3fc9fd0c52524535808238f9d8326293
+    parentId: uts_a2cb1b73581543bca00af301ce5aa76e
+    modified: 1704262171912
+    created: 1704262168892
+    requestId: req_9086010005174908917bb74b98cf8281
+    name: List an employee
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+    _type: unit_test
+  - _id: ut_d13cd6041ad54222b6157508fd56b28b
+    parentId: uts_a2cb1b73581543bca00af301ce5aa76e
+    modified: 1704262184187
+    created: 1704262181280
+    requestId: req_e529090dc36d48e481bdbd356cf23c4d
+    name: Delete an employee
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+    _type: unit_test
