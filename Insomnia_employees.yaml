@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2024-01-03T06:19:04.091Z
+__export_date: 2024-01-03T09:56:58.683Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
   - _id: req_0d5e556f95ea4242a3d185ac6e5a2a4f
@@ -197,7 +197,7 @@ resources:
     _type: cookie_jar
   - _id: spc_bc499b67adba4886923facfd2011ce05
     parentId: wrk_f57a2df2540144aaae2aee3b92c31d5b
-    modified: 1704261302687
+    modified: 1704275780733
     created: 1704178255050
     fileName: Employees
     contents: >
@@ -209,9 +209,9 @@ resources:
           description: A Sample Employees API
           contact:
               name: employees
-              url: 'http://localhost:3000'
+              url: 'http://192.168.1.179:3000/'
       servers:
-          - url: 'http://localhost:8080/api/v1'
+          - url: 'http://192.168.1.179:3000/api/v1'
             description: Employees Base URL
       tags:
         - name: Employees
