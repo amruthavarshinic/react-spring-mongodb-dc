@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2024-01-04T05:58:02.904Z
+__export_date: 2024-01-04T06:04:20.071Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
   - _id: req_0d5e556f95ea4242a3d185ac6e5a2a4f
@@ -428,31 +428,52 @@ resources:
     _type: environment
   - _id: ut_133e6b41405242ab961a1b4fe33894f4
     parentId: uts_a2cb1b73581543bca00af301ce5aa76e
-    modified: 1704262155730
+    modified: 1704348226793
     created: 1704262153170
     requestId: req_3dfd5fe39fa64e5d9d8165d7d015c151
     name: List employees
-    code: |-
+    code: |
+      // const response1 = await insomnia.send();
+      // expect(response1.status).to.equal(200);
       const response1 = await insomnia.send();
+
+      // Add some logging for debugging
+      console.log('Response Status:', response1.status);
+
+      // Add the assertion
       expect(response1.status).to.equal(200);
     _type: unit_test
   - _id: ut_f8843f7d3f4840a9aced1efcc46b881b
     parentId: uts_a2cb1b73581543bca00af301ce5aa76e
-    modified: 1704275981181
+    modified: 1704348235464
     created: 1704275939547
     requestId: req_9086010005174908917bb74b98cf8281
     name: List an employee
-    code: |-
+    code: |
+      // const response1 = await insomnia.send();
+      // expect(response1.status).to.equal(200);
       const response1 = await insomnia.send();
+
+      // Add some logging for debugging
+      console.log('Response Status:', response1.status);
+
+      // Add the assertion
       expect(response1.status).to.equal(200);
     _type: unit_test
   - _id: ut_97eca26614564861aadfa5799e74d2ed
     parentId: uts_a2cb1b73581543bca00af301ce5aa76e
-    modified: 1704347858719
+    modified: 1704348241947
     created: 1704347856330
     requestId: req_74088293c03f4bb184915ed13ba26da3
     name: Returns 200
-    code: |-
+    code: |
+      // const response1 = await insomnia.send();
+      // expect(response1.status).to.equal(200);
       const response1 = await insomnia.send();
+
+      // Add some logging for debugging
+      console.log('Response Status:', response1.status);
+
+      // Add the assertion
       expect(response1.status).to.equal(200);
     _type: unit_test
