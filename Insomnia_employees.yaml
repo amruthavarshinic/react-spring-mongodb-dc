@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2024-01-04T07:39:42.143Z
+__export_date: 2024-01-04T10:25:31.921Z
 __export_source: insomnia.desktop.app:v2023.5.8
 resources:
   - _id: req_defd4ac4f21048588aa760a0fb66d143
@@ -127,7 +127,7 @@ resources:
     _type: request
   - _id: req_2e2bd71d87bc4d05946676bcc5b5c070
     parentId: fld_dabacb6505374c14bc393bfe299b1ef0
-    modified: 1704353820909
+    modified: 1704363898483
     created: 1704350347089
     url: "{{ _.base_url }}/employees"
     name: Add a new Employee
@@ -137,9 +137,9 @@ resources:
       mimeType: application/json
       text: |-
         {
-          "emailId": "example@example.com",
-          "firstName": "example",
-          "lastName": "test"
+          "emailId": "test@test.com",
+          "firstName": "test",
+          "lastName": "example"
         }
     parameters: []
     headers:
@@ -406,7 +406,7 @@ resources:
     _type: unit_test_suite
   - _id: env_9d1f06a162494d26bb4508ebae6b7276
     parentId: env_5c9d5cca182c58dca00517cb8905c4dcbb5b29b0
-    modified: 1704353873752
+    modified: 1704363911736
     created: 1704350347081
     name: OpenAPI env
     data:
@@ -414,7 +414,7 @@ resources:
       base_path: /api/v1
       host: 172.171.244.207:3000
       base_url: http://172.171.244.207:8080/api/v1
-      id: "22"
+      id: "4"
     dataPropertyOrder:
       "&":
         - scheme
