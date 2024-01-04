@@ -3,17 +3,21 @@
 Open a terminal and run below command to start frontend
 ```sh
 cd frontend-react
+sudo apt update && sudo apt install npm
+npm i
 npm start
 ```
 Open another termal and run below command fro up and running backend
 
 ```sh
 cd backend-springboot
+sudo apt install maven
 mvn -c spring-boot:run
 ```
 Install mongoDB using docker
 ```sh
-docker run -d -p 27017:27017 --name my-mongodb mongo
+sudo apt install docker.io
+sudo docker run -d -p 27017:27017 --name my-mongodb mongo
 ```
 ### Install insomnia and inso cli
 
